@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="logo">
+            <a href="#" class="brand"><i class="fas fa-film"></i>MovieDB</a>
+          </div>
+          <div class="search">
+            <form action="#" class="form-search">
+              <input placeholder="Search" type="text" id="search" />
+              <input type="submit" value="" /><i class="fas fa-search"></i>
+              <div class="search-film"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- это прелодер -->
+      <div class="preloader">
+        <div class="loader"></div>
+      </div>
+      <div class="product-list">
+        <div class="product-list__container">
+          <h3 class="product-list__title">IMDB Top 250</h3>
+          <div class="product-list__item"></div>
+
+          <div id="pagination">
+            <button
+              class="btn btn-prev-outline btn-pagination"
+              data-page="previos"
+            >
+              «
+            </button>
+            <button class="btn btn-prev btn-pagination" data-page="prev">
+              Previous
+            </button>
+            <div class="btn-pagination-container"></div>
+            <button class="btn btn-next btn-pagination" data-page="next">
+              Next
+            </button>
+            <button
+              class="btn btn-next-outline btn-pagination"
+              data-page="last"
+            >
+              »
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- установите это на модальное окно что бы его увидеть style="display: block;" -->
+    <div class="modal">
+      <div class="modal-overlay container"></div>
+    </div>
+
+    <script src="https://use.fontawesome.com/c4ebb4dfcb.js"></script>
+  </body>
+</html>
